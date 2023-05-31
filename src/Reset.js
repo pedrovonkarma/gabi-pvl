@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-
+import {roxo, lilas, azul, azulc, rosa, amarelo} from './assets/colors.js'
 
 const GlobalStyle = createGlobalStyle`
 html, body, div, span, applet, object, iframe,
@@ -63,29 +63,41 @@ input:focus{
 	width:100%;
 	display:flex;
 	flex-direction:column;
-	background: linear-gradient(to bottom, #740094, #d7baf2);
+	background: linear-gradient(to bottom, ${azulc}, ${amarelo});
 	justify-content:space-between;
 	align-items:center;
 	padding-block:15px;
 	padding-inline:5%;
 	img{
-		width:20%;
+		width:15%;
 		filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
 		@media (max-width: 800px) {width:60%;}
 	}
 	p{
 		font-family:'Montserrat';
-		font-weight: 700;
+		font-weight: 800;
 		font-size: 30px;
 		text-align: center;
 		line-height:35px;
-		color:#fd3dab;
+		color:${roxo};
 		padding-block:10px;
 		width:80%;
 		@media (max-width: 800px) {font-size:20px; line-height:22px;}
 	}
+	h2{
+		font-family:'Montserrat';
+		font-weight: 700;
+		font-size: 27px;
+		text-align: center;
+		line-height:33px;
+		color:${roxo};
+		padding-block:10px;
+		width:70%;
+		@media (max-width: 800px) {font-size:18px; line-height:20px;}
+	}
+	}
 	button{
-		width:28%;
+		width:30%;
 		border-radius:50px;
 		font-family:'Montserrat';
 		font-weight: 700;
@@ -95,7 +107,7 @@ input:focus{
 		color:white;
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 		margin-block:15px;
-		padding-block:10px;
+		padding:10px;
 		background-color: #fd3dab;
 		cursor:pointer;
 		@media (max-width: 800px) {
@@ -407,20 +419,20 @@ button{
 .thirdCont{
 	width:100%;
 	display:flex;
-	background: linear-gradient(to bottom, #00a1d7, #00dfc8);
+	background: linear-gradient(to bottom, ${amarelo}, ${rosa});
 	justify-content:space-between;
 	align-items:center;
 	padding-inline:10%;
+	padding-top:30px;
 	flex-wrap:wrap;
 	h1{font-family:'Montserrat';
 		font-weight: 800;
 		font-size: 35px;
 		text-align: center;
 		line-height:40px;
-		color:#740094;
-		padding-bottom:30px;
-		padding-top: 120px;
-		@media (max-width: 800px) {font-size:22px; line-height:25px; padding-top:100px;}
+		color:black;
+		padding-block:30px;
+		@media (max-width: 800px) {font-size:22px; line-height:25px;}
 	}
 	p{
 		font-family:'Montserrat';
@@ -647,7 +659,6 @@ padding-block:10px;
 	border-radius:50px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-
 `
 
 
