@@ -95,7 +95,87 @@ input:focus{
 		width:70%;
 		@media (max-width: 800px) {font-size:18px; line-height:20px;}
 	}
+	
+	button{
+		width:30%;
+		border-radius:50px;
+		font-family:'Montserrat';
+		font-weight: 700;
+		font-size: 20px;
+		text-align: center;
+		line-height:22px;
+		color:white;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+		margin-block:15px;
+		padding:10px;
+		background-color: #fd3dab;
+		cursor:pointer;
+		@media (max-width: 800px) {
+			width:90%; font-size:20px; line-height:22px;
+		}
 	}
+}
+.buttonsbox{
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+width: 100%;
+padding-bottom: 20px;
+}
+.falsebutton{
+		width:30%;
+		border-radius:20px;
+		font-family:'Montserrat';
+		font-weight: 700;
+		font-size: 20px;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		line-height:22px;
+		color:white;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+		margin-block:15px;
+		padding:10px;
+		background-color: ${azul};
+		@media (max-width: 800px) {
+			width:100%; font-size:14px; line-height:18px;
+			margin-block: 10px;
+		}
+	}
+
+.containerThird{
+	width:100%;
+	display:flex;
+	flex-direction:column;
+	background: #F9E1C5;
+	justify-content:space-between;
+	align-items:center;
+	padding-block:25px;
+	padding-inline:5%;
+	p{
+		font-family:'Montserrat';
+		font-weight: 600;
+		font-size: 24px;
+		text-align: justify;
+		line-height:30px;
+		color:black;
+		padding-block:10px;
+		width:80%;
+		@media (max-width: 800px) {font-size:16px; line-height:20px;}
+	}
+	h1{
+		font-family:'Montserrat';
+		font-weight: bold;
+		font-size: 30px;
+		text-align: center;
+		line-height:35px;
+		color:${roxo};
+		padding-block:10px;
+		width:70%;
+		@media (max-width: 800px) {font-size:22px; line-height:25px;}
+	}
+	
 	button{
 		width:30%;
 		border-radius:50px;
@@ -425,14 +505,14 @@ button{
 	padding-inline:10%;
 	padding-top:30px;
 	flex-wrap:wrap;
+	
 	h1{font-family:'Montserrat';
-		font-weight: 800;
+		font-weight: 700;
 		font-size: 35px;
 		text-align: center;
 		line-height:40px;
 		color:black;
-		padding-block:30px;
-		@media (max-width: 800px) {font-size:22px; line-height:25px;}
+		@media (max-width: 800px) {font-size:20px; line-height:22px;padding-block:0;}
 	}
 	p{
 		font-family:'Montserrat';
@@ -517,10 +597,10 @@ button{
 }
 .fifCont{
 	width:100%;
-	background: linear-gradient(to bottom, #d7baf2, #fd3dab);
+	background: linear-gradient(to right, ${lilas}, ${rosa});
 	h1{
 		font-family:'Montserrat';
-		font-weight: 800;
+		font-weight: 700;
 		font-size: 45px;
 		text-align: center;
 		line-height:50px;
@@ -549,23 +629,23 @@ padding-block:10px;
 .checktwo{
 	margin-inline:auto;
 		width:40%;
-		border-radius:80px;
+		border-radius:40px;
 		p{font-family:'Montserrat';
-		font-weight: 400;
+		font-weight: 500;
 		font-size: 20px;
 		text-align: center;
 		line-height:22px;
 		color:white;
 		padding-block:15px;
 		text-align:left;
-		@media (max-width: 800px) {font-size:20px; line-height:22px; padding-block:10px;}
+		@media (max-width: 800px) {font-size:17px; line-height:18px; padding-block:10px;}
 	}
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 		padding:35px;
 		background-color: #740094;
 		cursor:default;
-		border: 3px solid #fd3dab;
-		@media (max-width: 800px) {width:90%;}
+		border: 1px solid ${lilas};
+		@media (max-width: 800px) {width:90%; padding-block:10px;}
 }
 .textboxb{
 	width:60%;

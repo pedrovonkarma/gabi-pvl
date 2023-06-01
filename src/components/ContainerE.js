@@ -3,14 +3,10 @@ export default function ContainerE(){
     return(<div className="fifCont">
         <h1>É perfeito para você que:</h1>
         <div className="checktwo">
-            <p>• Busca a liberdade financeira.</p>
-            <p>• É papeleira expert, que se sente travada.</p>
-            <p>• É papeleira iniciante, que está começando agora.</p>
-            <p>• Para você que quer trabalhar de casa, e ganhar de 2 a 5 mil por mês.</p>
-            <p>• Que quer estar mais próxima da família trabalhando em casa.</p>
-            <p>• Para você que não quer depender de ninguém para comprar alguma coisa.</p>
-            <p>• Você papeleira que quer se tornar referência na papelaria personalizada em sua região.</p>
-            <p>• Que quer aprender o passo a passo para fazer de 2 a 5 mil por mês trabalhando de casa.</p>
-        </div>
+            <p>• Quer começar a trabalhar com papelaria personalizada e já fazer seus próprios moldes.</p>
+            <p>• Já trabalha com personalizados e quer se diferenciar ainda mais;</p>
+            <p>• Quer aumentar a renda;</p>
+            <p>• Quer fazer peças mais criativas;</p>
+            <p>• Quer se tornar destaque na região que mora;</p></div>
     </div>)
 }
