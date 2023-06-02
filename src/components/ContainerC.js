@@ -1,7 +1,7 @@
 export default function ContainerC(){
 
     return(<div className="thirdCont">
-        <h1>Muito mais do que moldes, é uma forma simples e rápida de aprender a personalizar as próprias peças e completar a renda estando em casa.</h1>
+        <h1>Muito mais do que moldes, é uma forma simples e<br/>rápida de aprender a personalizar as próprias peças e<br/>completar a renda estando em casa.</h1>
         <p><strong>Imagine você tendo uma renda mensal vendendo peças que você mesma criou e que ninguém mais teria igual?</strong></p>
         <div className="buttonsbox">
             <div className='falsebutton'>Mesmo que você nunca ouviu falar sobre papelaria personalizada</div>

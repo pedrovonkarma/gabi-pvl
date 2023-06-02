@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import {roxo, lilas, azul, azulc, rosa, amarelo} from './assets/colors.js'
+import {roxo, lilas, azul, azulc, rosa, amarelo, pastel} from './assets/colors.js'
 
 const GlobalStyle = createGlobalStyle`
 html, body, div, span, applet, object, iframe,
@@ -63,7 +63,7 @@ input:focus{
 	width:100%;
 	display:flex;
 	flex-direction:column;
-	background: linear-gradient(to bottom, ${azulc}, ${amarelo});
+	background: linear-gradient(to bottom, ${roxo}, ${rosa});
 	justify-content:space-between;
 	align-items:center;
 	padding-block:15px;
@@ -79,10 +79,10 @@ input:focus{
 		font-size: 30px;
 		text-align: center;
 		line-height:35px;
-		color:${roxo};
+		color:${pastel};
 		padding-block:10px;
 		width:80%;
-		@media (max-width: 800px) {font-size:20px; line-height:22px;}
+		@media (max-width: 800px) {width: 100%;font-size:20px; line-height:22px;}
 	}
 	h2{
 		font-family:'Montserrat';
@@ -90,28 +90,31 @@ input:focus{
 		font-size: 27px;
 		text-align: center;
 		line-height:33px;
-		color:${roxo};
+		color:${pastel};
 		padding-block:10px;
 		width:70%;
-		@media (max-width: 800px) {font-size:18px; line-height:20px;}
+		@media (max-width: 800px) {width: 100%; font-size:18px; line-height:20px;}
 	}
 	
 	button{
-		width:30%;
 		border-radius:50px;
 		font-family:'Montserrat';
 		font-weight: 700;
-		font-size: 20px;
+		font-size: 25px;
 		text-align: center;
-		line-height:22px;
+		line-height:20px;
 		color:white;
+		height:80px;
+		padding: 30px;
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 		margin-block:15px;
-		padding:10px;
-		background-color: #fd3dab;
+		background-color: ${roxo};
 		cursor:pointer;
 		@media (max-width: 800px) {
-			width:90%; font-size:20px; line-height:22px;
+			width:100%; font-size:18px; line-height:18px;
+			padding: 0;
+			padding-inline:5px;
+			height: 70px;
 		}
 	}
 }
@@ -177,21 +180,23 @@ padding-bottom: 20px;
 	}
 	
 	button{
-		width:30%;
 		border-radius:50px;
 		font-family:'Montserrat';
 		font-weight: 700;
-		font-size: 20px;
+		font-size: 25px;
 		text-align: center;
-		line-height:22px;
+		line-height:20px;
 		color:white;
+		height:80px;
+		padding: 30px;
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 		margin-block:15px;
-		padding:10px;
-		background-color: #fd3dab;
+		background-color: ${rosa};
 		cursor:pointer;
 		@media (max-width: 800px) {
-			width:90%; font-size:20px; line-height:22px;
+			width:100%; font-size:17px; line-height:18px;
+			padding: 0;
+			height: 70px;
 		}
 	}
 
@@ -499,7 +504,7 @@ button{
 .thirdCont{
 	width:100%;
 	display:flex;
-	background: linear-gradient(to bottom, ${amarelo}, ${rosa});
+	background: linear-gradient(to bottom, ${rosa}, ${lilas});
 	justify-content:space-between;
 	align-items:center;
 	padding-inline:10%;
@@ -512,7 +517,7 @@ button{
 		text-align: center;
 		line-height:40px;
 		color:black;
-		@media (max-width: 800px) {font-size:20px; line-height:22px;padding-block:0;}
+		@media (max-width: 800px) {font-size:21px; line-height:24px;padding-block:0;}
 	}
 	p{
 		font-family:'Montserrat';
@@ -629,14 +634,14 @@ padding-block:10px;
 .checktwo{
 	margin-inline:auto;
 		width:40%;
-		border-radius:40px;
+		border-radius:30px;
 		p{font-family:'Montserrat';
 		font-weight: 500;
 		font-size: 20px;
 		text-align: center;
 		line-height:22px;
 		color:white;
-		padding-block:15px;
+		padding-block:10px;
 		text-align:left;
 		@media (max-width: 800px) {font-size:17px; line-height:18px; padding-block:10px;}
 	}
