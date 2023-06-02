@@ -3,6 +3,9 @@ import ContainerC from "./components/ContainerC";
 import GlobalStyle from "./Reset";
 import ContainerThird from "./components/ContainerThird";
 import ContainerE from "./components/ContainerE";
+import ContainerD from "./components/ContainerD";
+import ContainerTexto from "./components/ContainerTexto";
+import ContainerTextodois from "./components/ContainerTextodois";
 function App() {
   return (
     <>
@@ -12,6 +15,9 @@ function App() {
     <ContainerC/>
     <ContainerThird/>
     <ContainerE/>
+    <ContainerD/>
+    <ContainerTexto/>
+    <ContainerTextodois/>
     </>
   );
 }

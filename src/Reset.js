@@ -118,6 +118,73 @@ input:focus{
 		}
 	}
 }
+.textCont{
+	width:100%;
+	display:flex;
+	flex-direction:column;
+	background: linear-gradient(to bottom, black, ${roxo});
+	justify-content:space-between;
+	align-items:center;
+	padding-block:15px;
+	padding-inline:5%;
+
+	p{
+		font-family:'Montserrat';
+		font-weight: 600;
+		font-size: 24px;
+		text-align: left;
+		line-height:28px;
+		color:${pastel};
+		padding-block:10px;
+		width:80%;
+		@media (max-width: 800px) {width: 100%;font-size:16px; line-height:18px;}
+	}
+	h1{
+		font-family:'Montserrat';
+		font-weight: 700;
+		font-size: 30px;
+		text-align: center;
+		line-height:33px;
+		color:${pastel};
+		padding-block:30px;
+		width:70%;
+		@media (max-width: 800px) {width: 100%; font-size:20px; line-height:22px; padding-block:15px;}
+	}
+}	
+.textContdois{
+	width:100%;
+	display:flex;
+	flex-direction:column;
+	background: linear-gradient(to bottom, ${roxo}, black);
+	justify-content:space-between;
+	align-items:center;
+	padding-block:15px;
+	padding-inline:5%;
+
+	p{
+		font-family:'Montserrat';
+		font-weight: 600;
+		font-size: 24px;
+		text-align: left;
+		line-height:28px;
+		color:${pastel};
+		padding-block:10px;
+		width:80%;
+		@media (max-width: 800px) {width: 100%;font-size:16px; line-height:18px;}
+	}
+	h1{
+		font-family:'Montserrat';
+		font-weight: 700;
+		font-size: 30px;
+		text-align: center;
+		line-height:33px;
+		color:${pastel};
+		padding-block:30px;
+		width:70%;
+		@media (max-width: 800px) {width: 100%; font-size:20px; line-height:22px; padding-block:15px;}
+	}
+}	
+
 .buttonsbox{
 display: flex;
 justify-content: space-around;
@@ -209,15 +276,30 @@ padding-bottom: 20px;
 .fourthCont{
 	width:100%;
 	display:flex;
-	background: linear-gradient(to bottom, #00dfc8, #d7baf2);
-	justify-content:space-between;
+	flex-direction: column;
+	background: ${pastel};
 	align-items:center;
-	padding:8%;
-	img{
-		width:35%;
-
-	border-radius:50px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	padding-inline:4%;
+	padding-block: 20px;
+	button{
+		border-radius:50px;
+		font-family:'Montserrat';
+		font-weight: 700;
+		font-size: 25px;
+		text-align: center;
+		line-height:20px;
+		color:white;
+		height:80px;
+		padding: 30px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+		margin-block:15px;
+		background-color: ${rosa};
+		cursor:pointer;
+		@media (max-width: 800px) {
+			width:100%; font-size:17px; line-height:18px;
+			padding: 0;
+			height: 70px;
+		}
 	}
 
 }
@@ -653,29 +735,32 @@ padding-block:10px;
 		@media (max-width: 800px) {width:90%; padding-block:10px;}
 }
 .textboxb{
-	width:60%;
+	width:100%;
 	display:flex;
-	flex-direction:column;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-block:20px;
 	@media (max-width: 800px) {width:100%;}
 	
 }
 .questionBox{
-	background-color:#740094;
-	border-radius:15px;
-	transition: height 0.5s ease;
-	padding:15px;
-	overflow:hidden;
-	margin-block:10px;
+	display: flex;
+	flex-direction: column;
+	width: 20%;
+	margin-inline:10px;
+	@media (max-width: 800px) {width:90%;}
 
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-	p{
-		font-family:'Montserrat';
+		p{	font-family:'Montserrat';
 		font-weight: 500;
-		font-size: 22px;
-		line-height:28px;
-		color:white;
-		margin-block:10px;
-		@media (max-width: 800px) {font-size:20px; line-height:22px;}
+		font-size: 18px;
+		text-align: center;
+		line-height:20px;
+		color:black;
+		text-align:left;
+
+	transition: height 0.5s ease;
+
+		@media (max-width: 800px) {font-size:15px; line-height:17px;}
 	}
 }
 .question{
@@ -683,23 +768,32 @@ padding-block:10px;
 	justify-content:space-between;
 	width:100%;
 	cursor:pointer;
+	width: 100%;
+	background-color:${roxo};
+	border-radius:15px;
+	padding:15px;
+	overflow:hidden;
+	margin-block:10px;
+
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
 	h1{
 		font-family:'Montserrat';
 		font-weight: 700;
-		font-size: 25px;
+		font-size: 23px;
 		text-align: left;
-		line-height:30px;
+		line-height:27px;
 		color:white;
-		@media (max-width: 800px) {font-size:22px; line-height:25px;}
+		@media (max-width: 800px) {font-size:18px; line-height:20px;}
 	}
 	h2{
 		font-family:'Montserrat';
 		font-weight: 700;
-		font-size: 35px;
+		font-size: 30px;
 		text-align: right;
 		line-height:30px;
 		color:white;
-		@media (max-width: 800px) {font-size:30px; line-height:32px;}
+		@media (max-width: 800px) {font-size:25px; line-height:25px;}
 	}
 }
 .textboxa{
