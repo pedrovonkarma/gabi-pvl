@@ -812,6 +812,7 @@ padding-block:10px;
 	flex-direction: column;
 	width: 20%;
 	margin-inline:10px;
+	padding-bottom: 15px;
 	
 	@media (max-width: 800px) {width:90%;}
 
@@ -825,6 +826,41 @@ padding-block:10px;
 	transition: height 0.5s ease;
 
 		@media (max-width: 800px) {font-size:15px; line-height:17px;}
+	}
+}
+.imageContainer{
+	width: 90%;
+	position: relative;
+	margin-inline: auto;
+	overflow: hidden;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	border-radius: 15px;
+	img{
+		width:100%;
+		object-fit: cover;
+	}
+}
+.imgdiv{
+	width: 100%;
+	position: absolute;
+	top:0;
+	left:0;
+	height: 100%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	z-index:2;
+	cursor: default;
+	background: linear-gradient(to top, ${roxo} 0%, ${roxo} 15%, rgba(255, 0, 0, 0) 35%);
+	h1{
+z-index: 3;
+font-family:'Montserrat';
+		font-weight: 700;
+		font-size: 22px;
+		text-align: center;
+		line-height:22px;
+		color:${pastel};
+		padding-bottom: 20px;
 	}
 }
 .questionBox2{
@@ -855,7 +891,7 @@ padding-block:10px;
 	cursor:pointer;
 	width: 100%;
 	background-color:${roxo};
-	border-radius:15px;
+	border-radius:12px;
 	padding:15px;
 	overflow:hidden;
 	margin-block:10px;
@@ -864,7 +900,7 @@ padding-block:10px;
 
 	h1{
 		font-family:'Montserrat';
-		font-weight: 700;
+		font-weight: 600;
 		font-size: 23px;
 		text-align: left;
 		line-height:25px;

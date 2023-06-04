@@ -1,4 +1,12 @@
+import foto6 from './../assets/foto6.webp'
+import foto7 from './../assets/foto7.webp'
+import foto8 from './../assets/foto8.webp'
+import foto9 from './../assets/foto9.webp'
+import foto10 from './../assets/foto10.webp'
+import foto11 from './../assets/foto11.webp'
+import foto13 from './../assets/foto13.webp'
 import { useState } from "react"
+import ImageTemplate from './ImageTemplate';
 export default function ContainerD() {
     const resposta1 = 'Aprenda como trabalhar com a mistura de kits digitais sem perder a identidade visual, a trabalhar com uma paleta grande de cores sem perder a combinação entre elas e a desenvolver seus próprios moldes de caixa do zero, além de mockups 3D e montagem.';
     const resposta2 = 'Chega de depender somente da compra de moldes de outras papeleiras. Chega de se desesperar por não ter aquele molde que tanto queria. Agora você vai aprender a desenhar do zero e vamos começar pelo formato cilíndrico. O modelo que faz tanto sucesso no nosso perfil, que é tão pedido entre nossas clientes e é uma grande substituta do cofrinho e latinha.';
@@ -23,7 +31,7 @@ export default function ContainerD() {
     return (<div className="fourthCont">
         <div className="textboxb">
             <div className="questionBox">
-                FOTO
+                <ImageTemplate name='Estratégias' img={foto6}/>
                 <div onClick={() => { r1 === '' ? setR1(<p>{resposta1}</p>) : setR1('') }} className="question">
                     <h1>Clique para ler</h1>
                     <h2>+</h2>
@@ -31,7 +39,7 @@ export default function ContainerD() {
                 {r1}
             </div>
             <div className="questionBox">
-                FOTO
+            <ImageTemplate name='Caixa cilindrinho' img={foto7}/>
                 <div onClick={() => { r2 === '' ? setR2(<p>{resposta2}</p>) : setR2('') }} className="question">
                     <h1>Clique para ler</h1>
                     <h2>+</h2>
@@ -40,7 +48,7 @@ export default function ContainerD() {
             </div>
 
             <div className="questionBox">
-                FOTO
+                <ImageTemplate name='Caixa curva' img={foto8}/>
                 <div onClick={() => { r3 === '' ? setR3(<p>{resposta3}</p>) : setR3('') }} className="question">
                     <h1>Clique para ler</h1>
                     <h2>+</h2>
@@ -49,7 +57,7 @@ export default function ContainerD() {
             </div>
 
             <div className="questionBox">
-                FOTO
+                <ImageTemplate name='Caixa cubetes' img={foto9}/>
                 <div onClick={() => { r4 === '' ? setR4(<p>{resposta4}</p>) : setR4('') }} className="question">
                     <h1>Clique para ler</h1>
                     <h2>+</h2>
@@ -57,7 +65,7 @@ export default function ContainerD() {
                 {r4}
             </div>
 
-            <div className="questionBox">FOTO
+            <div className="questionBox"><ImageTemplate name='MockUps 3D' img={foto10}/>
                 <div onClick={() => { r5 === '' ? setR5(<p>{resposta5}</p>) : setR5('') }} className="question">
                     <h1>Clique para ler</h1>
                     <h2>+</h2>
@@ -65,7 +73,7 @@ export default function ContainerD() {
                 {r5}
             </div>
 
-            <div className="questionBox">FOTO
+            <div className="questionBox"><ImageTemplate name='Montagem' img={foto11}/>
                 <div onClick={() => { r6 === '' ? setR6(<p>{resposta6}</p>) : setR6('') }} className="question">
                     <h1>Clique para ler</h1>
                     <h2>+</h2>
@@ -73,7 +81,7 @@ export default function ContainerD() {
                 {r6}
             </div>
 
-            <div className="questionBox">FOTO
+            <div className="questionBox"><ImageTemplate name='Cenarismo' img={foto6}/>
                 <div onClick={() => { r7 === '' ? setR7(<p>{resposta7}</p>) : setR7('') }} className="question">
                     <h1>Clique para ler</h1>
                     <h2>+</h2>
@@ -81,7 +89,7 @@ export default function ContainerD() {
                 {r7}
             </div>
 
-            <div className="questionBox">FOTO
+            <div className="questionBox"><ImageTemplate name='Nivelamento' img={foto13}/>
                 <div onClick={() => { r8 === '' ? setR8(<p>{resposta8}</p>) : setR8('') }} className="question">
                     <h1>Clique para ler</h1>
                     <h2>+</h2>
