@@ -917,6 +917,15 @@ font-family:'Montserrat';
 		@media (max-width: 800px) {font-size:25px; line-height:25px;}
 	}
 }
+.foto2{
+	width: 30%;
+	margin-block: 30px;
+	object-fit: cover;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	border-radius:30px;
+	@media (max-width: 800px) {display:none;}
+	
+}
 .question2{
 	display:flex;
 	justify-content:space-between;
