@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import {roxo, lilas, azul, azulc, rosa, amarelo, pastel} from './assets/colors.js'
+import {roxo, lilas, azul, rosa, pastel} from './assets/colors.js'
 
 const GlobalStyle = createGlobalStyle`
 html, body, div, span, applet, object, iframe,
@@ -364,10 +364,10 @@ padding-bottom: 20px;
 display:flex;
 flex-direction:column;
 align-items:center;
-padding-block:20px;
-background: linear-gradient(to bottom, #740094, black);
+padding-block:30px;
+padding-inline:4%;
+background: black;
 
-@media (max-width: 800px) {padding-inline:5%;}
 h1{
 	font-family:'Montserrat';
 		font-weight: 700;
@@ -378,47 +378,111 @@ h1{
 		padding-block:20px;
 		margin-bottom:30px;
 
-@media (max-width: 800px) {font-size:22px; line-height:25px;}
+@media (max-width: 800px) {font-size:22px; line-height:25px;margin-bottom:0;}
 }
 }
 .offertbox{
 display:flex;
 justify-content:center;
 align-items:center;
-
-@media (max-width: 800px) {display:block;}
-
+width: 70%;
+padding-block: 20px;
+@media (max-width: 800px) {flex-direction:column; width: 100%;}
 }
-.offertcard{
-	width:38%;
-	background: linear-gradient(to bottom, #00a1d7, #004c7f);
-box-shadow:(0 0 10px rgba(0, 0, 0, 0.3));
-padding:20px;
-border-radius:40px;
-margin-inline:80px;
-height:360px;
-display:flex;
-flex-direction:column;
-justify-content: space-around;
-@media (max-width: 800px) {width:100%; margin-inline:0; margin-bottom:30px;}
-h2{
-	font-family:'Montserrat';
+
+.FAQ{
+	background-color: ${pastel};
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 30px;
+	h1{
+		font-family:'Montserrat';
 		font-weight: 700;
-		font-size: 20px;
+		font-size: 40px;
 		text-align: center;
-		line-height:45px;
-		color:white;
-		
-@media (max-width: 800px) {font-size:22px; line-height:25px;}
+		line-height:40px;
+		color:black;
+		padding-block: 20px;
+
+@media (max-width: 800px) {font-size:28px; line-height:30px;}
 }
+	}
+
+.oferta1{
+	width:52%;
+	background-color: ${roxo};
+	box-shadow:(0 0 10px rgba(0, 0, 0, 0.3));
+padding:20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+border-radius:40px;
+border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  @media (max-width: 800px) {
+	width: 80%;
+	border-top-right-radius: 40px;
+	border-bottom-left-radius: 0;
+  }
+
 p{
 	font-family:'Montserrat';
 		font-weight: 500;
 		font-size: 15px;
-		line-height:25px;
+		line-height:22px;
 		color:white;
+		@media (max-width: 800px) {
+	font-size:13px;
+	line-height: 17px;
+  }
+}
+}
+.oferta2{
+	width:48%;
+	background-color: ${rosa};
+	box-shadow:(0 0 10px rgba(0, 0, 0, 0.3));
+padding:30px;
+display: flex;
+flex-direction: column;
+align-items: center;
+border-radius:40px;
+border: 1px solid ${roxo};
+@media (max-width: 800px) {
+	width: 100%;
+  }
+h2{
+	font-family:'Montserrat';
+		font-weight: 600;
+		font-size: 25px;
+		line-height:30px;
+		color:white;
+		margin-block: 50px;
+		text-align: center;
+		@media (max-width: 800px) {
+	margin-block:0;
+	font-size: 22px;
+	line-height: 27px;
+  }
+}
+button{
+		border-radius:30px;
 
-@media (max-width: 800px) {font-size:18px; line-height:20px;}
+		margin-block: 50px;
+		font-family:'Montserrat';
+		font-weight: 700;
+		font-size: 25px;
+		text-align: center;
+		line-height:20px;
+		color:white;
+		padding: 30px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+		background-color: ${roxo};
+		cursor:pointer;
+		@media (max-width: 800px) {
+	margin-bottom:0px;
+	margin-top:20px;
+  }
 }
 }
 .wppButton{
@@ -748,6 +812,26 @@ padding-block:10px;
 	flex-direction: column;
 	width: 20%;
 	margin-inline:10px;
+	
+	@media (max-width: 800px) {width:90%;}
+
+		p{	font-family:'Montserrat';
+		font-weight: 400;
+		font-size: 18px;
+		text-align: center;
+		line-height:20px;
+		color:black;
+		text-align:left;
+	transition: height 0.5s ease;
+
+		@media (max-width: 800px) {font-size:15px; line-height:17px;}
+	}
+}
+.questionBox2{
+	display: flex;
+	flex-direction: column;
+	width: 43%;
+	margin-inline:10px;
 	@media (max-width: 800px) {width:90%;}
 
 		p{	font-family:'Montserrat';
@@ -758,6 +842,7 @@ padding-block:10px;
 		color:black;
 		text-align:left;
 
+		padding-bottom:15px;
 	transition: height 0.5s ease;
 
 		@media (max-width: 800px) {font-size:15px; line-height:17px;}
@@ -782,7 +867,7 @@ padding-block:10px;
 		font-weight: 700;
 		font-size: 23px;
 		text-align: left;
-		line-height:27px;
+		line-height:25px;
 		color:white;
 		@media (max-width: 800px) {font-size:18px; line-height:20px;}
 	}
@@ -795,6 +880,41 @@ padding-block:10px;
 		color:white;
 		@media (max-width: 800px) {font-size:25px; line-height:25px;}
 	}
+}
+.question2{
+	display:flex;
+	justify-content:space-between;
+	width:100%;
+	cursor:pointer;
+	width: 100%;
+	background-color:${roxo};
+	border-radius:15px;
+	padding-inline:15px;
+	overflow:hidden;
+	margin-block:10px;
+	align-items: center;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+	h1{
+		font-family:'Montserrat';
+		font-weight: 700;
+		font-size: 22px;
+		text-align: left;
+		line-height:25px;
+		color:white;
+		@media (max-width: 800px) {font-size:18px; line-height:20px;}
+	}
+	h2{
+		font-family:'Montserrat';
+		font-weight: 700;
+		font-size: 30px;
+		text-align: right;
+		line-height:30px;
+		color:white;
+		margin-left:5px;
+		@media (max-width: 800px) {font-size:25px; line-height:25px;}
+	}
+	
 }
 .textboxa{
 	width:47%;

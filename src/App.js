@@ -6,6 +6,9 @@ import ContainerE from "./components/ContainerE";
 import ContainerD from "./components/ContainerD";
 import ContainerTexto from "./components/ContainerTexto";
 import ContainerTextodois from "./components/ContainerTextodois";
+import OfertaContainer from "./components/OfertaContainer";
+import ContainerTextoTres from "./components/ContainerTextoTres";
+import FAQ from "./components/FAQ";
 function App() {
   return (
     <>
@@ -18,6 +21,9 @@ function App() {
     <ContainerD/>
     <ContainerTexto/>
     <ContainerTextodois/>
+    <OfertaContainer/>
+    <ContainerTextoTres/>
+    <FAQ/>
     </>
   );
 }
