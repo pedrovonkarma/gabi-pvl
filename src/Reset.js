@@ -81,7 +81,7 @@ input:focus{
 		color:${pastel};
 		padding-block:10px;
 		width:100%;
-		@media (max-width: 800px) {width: 100%;font-size:18px; line-height:20px;}
+		@media (max-width: 800px) {width: 100%;font-size:14px; line-height:16px;}
 	}
 	h2{
 		font-family:'Montserrat';
@@ -282,7 +282,7 @@ padding-bottom: 20px;
 		color:${roxo};
 		padding-block:10px;
 		width:70%;
-		@media (max-width: 800px) {font-size:26px; line-height:28px; width: 100%;}
+		@media (max-width: 800px) {font-size:22px; line-height:24px; width: 100%;}
 	}
 	
 	button{
@@ -477,8 +477,8 @@ p{
 		line-height:22px;
 		color:white;
 		@media (max-width: 800px) {
-	font-size:13px;
-	line-height: 17px;
+	font-size:9px;
+	line-height: 18px;
   }
 }
 }
@@ -721,8 +721,7 @@ button{
 		color:black;
 		margin-inline: auto;
 		
-	@media (max-width: 800px) {padding-inline:5%;}
-		@media (max-width: 800px) {font-size:20px; line-height:22px;padding-block:0;}
+		@media (max-width: 800px) {font-size:16px; line-height:18px;padding-block:0;}
 	}
 	p{
 		font-family:'Montserrat';
@@ -734,7 +733,7 @@ button{
 		padding-block:40px;
 		width:70%;
 		margin:auto;
-		@media (max-width: 800px) {font-size:17px; line-height:18px; width:98%; padding-block:25px;}
+		@media (max-width: 800px) {font-size:14px; line-height:16px; width:98%; padding-block:25px;}
 	}
 	button{
 		margin-inline:auto;
@@ -868,7 +867,7 @@ padding-block:10px;
 		color:white;
 		padding-block:15px;
 		text-align:left;
-		@media (max-width: 800px) { text-align: justify;font-size:17px; line-height:18px; padding-block:10px; width: 100%;}
+		@media (max-width: 800px) { text-align: justify;font-size:14px; line-height:16px; padding-block:10px; width: 100%;}
 	}
 		padding-inline:35px;
 		cursor:default;
