@@ -6,7 +6,7 @@ import foto5 from "../assets/foto5.webp";
 export default function ContainerB(){
 
     return(<div className="modCont">
-        <p>SÃO 3 MOLDES EXCLUSIVOS<br/>QUE VOCÊ SÓ ENCONTRA AQUI</p>
+        <p>SÃO 3 MOLDES EXCLUSIVOS QUE VOCÊ SÓ ENCONTRA AQUI</p>
         <div className="mobgamb" style={{display: 'flex', width: '100%', justifyContent: 'center'}}>
         <ImageTemplate classN="imageContainer2" img={foto3} name="Caixa cubetes"/>
         <ImageTemplate classN="imageContainer2" img={foto4} name="Caixa cilindriquinha"/>

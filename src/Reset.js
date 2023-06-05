@@ -75,24 +75,24 @@ input:focus{
 	p{
 		font-family:'Montserrat';
 		font-weight: 800;
-		font-size: 34px;
+		font-size: 32px;
 		text-align: center;
-		line-height:38px;
+		line-height:36px;
 		color:${pastel};
 		padding-block:10px;
 		width:100%;
-		@media (max-width: 800px) {width: 100%;font-size:20px; line-height:22px;}
+		@media (max-width: 800px) {width: 100%;font-size:18px; line-height:20px;}
 	}
 	h2{
 		font-family:'Montserrat';
-		font-weight: 700;
-		font-size: 24px;
+		font-weight: 600;
+		font-size: 19px;
 		text-align: center;
-		line-height:30px;
+		line-height:24px;
 		color:${pastel};
 		padding-block:10px;
 		width:100%;
-		@media (max-width: 800px) {width: 100%; font-size:18px; line-height:20px;}
+		@media (max-width: 800px) {width: 100%; font-size:15px; line-height:18px;}
 	}
 	
 	button{
@@ -139,7 +139,7 @@ input:focus{
 		color:${pastel};
 		padding-block:10px;
 		width:80%;
-		@media (max-width: 800px) {width: 100%;font-size:16px; line-height:18px;}
+		@media (max-width: 800px) {width: 100%;font-size:14px; line-height:16px; text-align:justify;}
 	}
 	h1{
 		font-family:'Montserrat';
@@ -150,7 +150,7 @@ input:focus{
 		color:${rosa};
 		padding-block:30px;
 		width:70%;
-		@media (max-width: 800px) {width: 100%; font-size:20px; line-height:22px; padding-block:15px;}
+		@media (max-width: 800px) {width: 100%; font-size:24px; line-height:26px; padding-block:15px;}
 	}
 }
 .textCont3{
@@ -207,7 +207,7 @@ input:focus{
 		color:${pastel};
 		padding-block:10px;
 		width:100%;
-		@media (max-width: 800px) {width: 100%;font-size:14px; line-height:16px;}
+		@media (max-width: 800px) {width: 100%;font-size:14px; line-height:16px; text-align:center;}
 	}
 	h1{
 		font-family:'Montserrat';
@@ -282,7 +282,7 @@ padding-bottom: 20px;
 		color:${roxo};
 		padding-block:10px;
 		width:70%;
-		@media (max-width: 800px) {font-size:22px; line-height:25px;}
+		@media (max-width: 800px) {font-size:26px; line-height:28px; width: 100%;}
 	}
 	
 	button{
@@ -409,7 +409,7 @@ align-items:center;
 padding-block:30px;
 padding-inline:4%;
 background: black;
-@media (max-width: 800px) {padding-bottom:0;}
+@media (max-width: 800px) {padding-bottom:0; padding-top:0;}
 h1{
 	font-family:'Montserrat';
 		font-weight: 700;
@@ -421,7 +421,7 @@ h1{
 		padding-inline: 3%;
 		margin-bottom:30px;
 
-@media (max-width: 800px) {font-size:22px; line-height:25px;margin-bottom:0;}
+@media (max-width: 800px) {font-size:19px; line-height:22px;margin-bottom:0; padding-block:5px; padding-inline:0;}
 }
 }
 .offertbox{
@@ -712,6 +712,7 @@ button{
 	padding-top:30px;
 	flex-wrap:wrap;
 	
+	@media (max-width: 800px) {padding-inline:0;}
 	h1{font-family:'Montserrat';
 		font-weight: 700;
 		font-size: 32px;
@@ -719,6 +720,8 @@ button{
 		line-height:38px;
 		color:black;
 		margin-inline: auto;
+		
+	@media (max-width: 800px) {padding-inline:5%;}
 		@media (max-width: 800px) {font-size:20px; line-height:22px;padding-block:0;}
 	}
 	p{
@@ -731,7 +734,7 @@ button{
 		padding-block:40px;
 		width:70%;
 		margin:auto;
-		@media (max-width: 800px) {font-size:18px; line-height:20px; width:90%; padding-block:25px;}
+		@media (max-width: 800px) {font-size:17px; line-height:18px; width:98%; padding-block:25px;}
 	}
 	button{
 		margin-inline:auto;
@@ -783,7 +786,7 @@ button{
 	align-items:center;
 	padding-bottom: 35px;
 	padding-inline:10%;
-	@media (max-width: 800px) {padding-bottom:0;}
+	@media (max-width: 800px) {padding-bottom:0; padding-inline:0;}
 	p{
 		font-family:'Montserrat';
 		font-weight: 700;
@@ -808,6 +811,7 @@ button{
 	padding-top: 15px;
 	@media (max-width: 800px) {
 		flex-wrap: wrap;
+		padding-inline:5%;
 	}
 }
 .fifCont{
@@ -830,7 +834,7 @@ button{
 		@media (max-width: 800px) {font-size:25px; line-height:28px;}
 	}
 	padding-bottom:40px;
-	@media (max-width: 800px) {padding-bottom:10px;}
+	@media (max-width: 800px) {padding-bottom:10px; padding-inline:0;}
 }
 .bonusCont{
 padding-block:10px;
@@ -855,6 +859,7 @@ padding-block:10px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+
 		p{font-family:'Montserrat';
 		font-weight: 500;
 		font-size: 18px;
@@ -863,11 +868,11 @@ padding-block:10px;
 		color:white;
 		padding-block:15px;
 		text-align:left;
-		@media (max-width: 800px) {font-size:17px; line-height:18px; padding-block:10px;}
+		@media (max-width: 800px) { text-align: justify;font-size:17px; line-height:18px; padding-block:10px; width: 100%;}
 	}
 		padding-inline:35px;
 		cursor:default;
-		@media (max-width: 800px) {width:90%; padding-block:10px;}
+		@media (max-width: 800px) {width:100%; padding-block:10px; padding-inline:5%;}
 }
 .textboxb{
 	width:100%;
@@ -1100,7 +1105,7 @@ font-family:'Montserrat';
 	width: 100%;
 	align-items: center;
 	padding-inline:2%;
-	@media (max-width: 800px) {flex-direction: column;}
+	@media (max-width: 800px) {flex-direction: column; padding-inline:0;}
 }
 .foto2{
 	width: 28%;
