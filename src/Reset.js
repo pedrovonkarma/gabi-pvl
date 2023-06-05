@@ -60,14 +60,12 @@ input:focus{
     outline: none;
 }
 .headCont{
-	width:100%;
+	width:67%;
 	display:flex;
 	flex-direction:column;
-	background: linear-gradient(to bottom, ${roxo}, ${rosa});
 	justify-content:space-between;
 	align-items:center;
 	padding-block:15px;
-	padding-inline:5%;
 	img{
 		width:15%;
 		filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
@@ -81,7 +79,7 @@ input:focus{
 		line-height:35px;
 		color:${pastel};
 		padding-block:10px;
-		width:80%;
+		width:100%;
 		@media (max-width: 800px) {width: 100%;font-size:20px; line-height:22px;}
 	}
 	h2{
@@ -92,7 +90,7 @@ input:focus{
 		line-height:33px;
 		color:${pastel};
 		padding-block:10px;
-		width:70%;
+		width:100%;
 		@media (max-width: 800px) {width: 100%; font-size:18px; line-height:20px;}
 	}
 	
@@ -150,7 +148,8 @@ input:focus{
 		width:70%;
 		@media (max-width: 800px) {width: 100%; font-size:20px; line-height:22px; padding-block:15px;}
 	}
-}	
+}
+	
 .textContdois{
 	width:100%;
 	display:flex;
@@ -164,12 +163,12 @@ input:focus{
 	p{
 		font-family:'Montserrat';
 		font-weight: 600;
-		font-size: 24px;
+		font-size: 22px;
 		text-align: left;
-		line-height:28px;
+		line-height:24px;
 		color:${pastel};
 		padding-block:10px;
-		width:80%;
+		width:100%;
 		@media (max-width: 800px) {width: 100%;font-size:16px; line-height:18px;}
 	}
 	h1{
@@ -387,6 +386,7 @@ justify-content:center;
 align-items:center;
 width: 70%;
 padding-block: 20px;
+margin-top: 60px;
 @media (max-width: 800px) {flex-direction:column; width: 100%;}
 }
 
@@ -438,11 +438,20 @@ p{
   }
 }
 }
+.phonecollage{
+	position: absolute;
+	z-index: 2;
+	top: -100px;
+	width: 100%;
+	filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+}
 .oferta2{
+	position: relative;
 	width:48%;
 	background-color: ${rosa};
 	box-shadow:(0 0 10px rgba(0, 0, 0, 0.3));
-padding:30px;
+padding-top:40px;
+padding-bottom:10px;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -457,7 +466,8 @@ h2{
 		font-size: 25px;
 		line-height:30px;
 		color:white;
-		margin-block: 50px;
+		margin-top: 90px;
+		margin-bottom: 10px;
 		text-align: center;
 		@media (max-width: 800px) {
 	margin-block:0;
@@ -468,7 +478,7 @@ h2{
 button{
 		border-radius:30px;
 
-		margin-block: 50px;
+		margin-block: 40px;
 		font-family:'Montserrat';
 		font-weight: 700;
 		font-size: 25px;
@@ -721,18 +731,19 @@ button{
 .modCont{
 	width:100%;
 	display:flex;
-	background: linear-gradient(to bottom, #d7baf2, #00a1d7);
+	flex-direction: column;
+	background: black;
 	justify-content:space-between;
 	align-items:center;
+	padding-bottom: 35px;
 	padding-inline:10%;
-	flex-wrap:wrap;
 	p{
 		font-family:'Montserrat';
 		font-weight: 700;
 		font-size: 35px;
 		text-align: center;
 		line-height:40px;
-		color:black;
+		color:${pastel};
 		padding-block:20px;
 		@media (max-width: 800px) {
 			font-size:22px; line-height:25px;
@@ -748,7 +759,12 @@ button{
 }
 .fifCont{
 	width:100%;
-	background: linear-gradient(to right, ${lilas}, ${rosa});
+	background: linear-gradient(to bottom , ${lilas}, ${rosa});
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-top: 15px;
 	h1{
 		font-family:'Montserrat';
 		font-weight: 700;
@@ -778,9 +794,13 @@ padding-block:10px;
 	}
 }
 .checktwo{
-	margin-inline:auto;
-		width:40%;
+		width:50%;
+		height: 100%;
 		border-radius:30px;
+		padding-block:25px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 		p{font-family:'Montserrat';
 		font-weight: 500;
 		font-size: 20px;
@@ -792,7 +812,7 @@ padding-block:10px;
 		@media (max-width: 800px) {font-size:17px; line-height:18px; padding-block:10px;}
 	}
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-		padding:35px;
+		padding-inline:35px;
 		background-color: #740094;
 		cursor:default;
 		border: 1px solid ${lilas};
@@ -828,6 +848,18 @@ padding-block:10px;
 		@media (max-width: 800px) {font-size:15px; line-height:17px;}
 	}
 }
+.imageContainer2{
+	width: 25%;
+	position: relative;
+	margin-inline: auto;
+	overflow: hidden;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	border-radius: 15px;
+	img{
+		width:100%;
+		object-fit: cover;
+	}
+}
 .imageContainer{
 	width: 90%;
 	position: relative;
@@ -839,6 +871,9 @@ padding-block:10px;
 		width:100%;
 		object-fit: cover;
 	}
+}
+.imgdiv2{
+	width: 30%;
 }
 .imgdiv{
 	width: 100%;
@@ -917,11 +952,34 @@ font-family:'Montserrat';
 		@media (max-width: 800px) {font-size:25px; line-height:25px;}
 	}
 }
+.firstCont{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	padding-inline:5%;
+	background: linear-gradient(to bottom, ${roxo}, ${rosa});
+}
+.secondCont{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	align-items: center;
+	padding-inline:2%;
+}
 .foto2{
-	width: 30%;
+	width: 28%;
 	margin-block: 30px;
 	object-fit: cover;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	border-radius:30px;
+	@media (max-width: 800px) {display:none;}
+	
+}
+.foto3{
+	width: 38%;
+	margin-block: 30px;
+	filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5));
+	object-fit: cover;
 	border-radius:30px;
 	@media (max-width: 800px) {display:none;}
 	

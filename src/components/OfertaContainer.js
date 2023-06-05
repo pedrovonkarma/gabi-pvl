@@ -1,3 +1,4 @@
+import phones from "../assets/foto20.webp"
 export default function OfertaContainer() {
 
     return (<div className="oferta">
@@ -18,7 +19,7 @@ export default function OfertaContainer() {
 - Garantia de 7 dias
 
                 </p></div>
-            <div className="oferta2"><h2>R$ 197,00 à vista.<br/>Dividido em 12x R$ 19,78</h2><button>ENTRAR AGORA</button></div>
+            <div className="oferta2"><img className="phonecollage" src={phones} alt="phones"/><h2>R$ 197,00 à vista.<br/>Dividido em 12x R$ 19,78</h2><button>ENTRAR AGORA</button></div>
         </div>
     </div>)
 }

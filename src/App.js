@@ -9,6 +9,7 @@ import ContainerTextodois from "./components/ContainerTextodois";
 import OfertaContainer from "./components/OfertaContainer";
 import ContainerTextoTres from "./components/ContainerTextoTres";
 import FAQ from "./components/FAQ";
+import ContainerB from "./components/ContainerB";
 function App() {
   return (
     <>
@@ -18,6 +19,7 @@ function App() {
     <ContainerC/>
     <ContainerThird/>
     <ContainerE/>
+    <ContainerB/>
     <ContainerD/>
     <ContainerTexto/>
     <ContainerTextodois/>
