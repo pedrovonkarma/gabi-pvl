@@ -92,7 +92,7 @@ input:focus{
 		color:${pastel};
 		padding-block:10px;
 		width:100%;
-		@media (max-width: 800px) {width: 100%; font-size:15px; line-height:18px;}
+		@media (max-width: 800px) {width: 100%; font-size:12px; line-height:15px;}
 	}
 	
 	button{
@@ -282,7 +282,7 @@ padding-bottom: 20px;
 		color:${roxo};
 		padding-block:10px;
 		width:70%;
-		@media (max-width: 800px) {font-size:22px; line-height:24px; width: 100%;}
+		@media (max-width: 800px) {font-size:20px; line-height:20px; width: 100%;}
 	}
 	
 	button{
@@ -721,7 +721,7 @@ button{
 		color:black;
 		margin-inline: auto;
 		
-		@media (max-width: 800px) {font-size:16px; line-height:18px;padding-block:0;}
+		@media (max-width: 800px) {font-size:14px; line-height:16px;padding-block:0;}
 	}
 	p{
 		font-family:'Montserrat';
@@ -733,7 +733,7 @@ button{
 		padding-block:40px;
 		width:70%;
 		margin:auto;
-		@media (max-width: 800px) {font-size:14px; line-height:16px; width:98%; padding-block:25px;}
+		@media (max-width: 800px) {font-size:12px; line-height:14px; width:98%; padding-block:25px;}
 	}
 	button{
 		margin-inline:auto;
