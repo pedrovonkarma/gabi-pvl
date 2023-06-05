@@ -139,7 +139,7 @@ input:focus{
 		color:${pastel};
 		padding-block:10px;
 		width:80%;
-		@media (max-width: 800px) {width: 100%;font-size:14px; line-height:16px; text-align:justify;}
+		@media (max-width: 800px) {width: 100%;font-size:12px; line-height:14px; text-align:justify;}
 	}
 	h1{
 		font-family:'Montserrat';
@@ -795,7 +795,7 @@ button{
 		color:${pastel};
 		padding-block:20px;
 		@media (max-width: 800px) {
-			font-size:20px; line-height:22px;
+			font-size:20px; line-height:22px;padding-inline:5%;
 		}
 	}
 	img{
