@@ -75,9 +75,9 @@ input:focus{
 	p{
 		font-family:'Montserrat';
 		font-weight: 800;
-		font-size: 30px;
+		font-size: 34px;
 		text-align: center;
-		line-height:35px;
+		line-height:38px;
 		color:${pastel};
 		padding-block:10px;
 		width:100%;
@@ -86,9 +86,9 @@ input:focus{
 	h2{
 		font-family:'Montserrat';
 		font-weight: 700;
-		font-size: 27px;
+		font-size: 24px;
 		text-align: center;
-		line-height:33px;
+		line-height:30px;
 		color:${pastel};
 		padding-block:10px;
 		width:100%;
@@ -99,11 +99,14 @@ input:focus{
 		border-radius:50px;
 		font-family:'Montserrat';
 		font-weight: 700;
-		font-size: 25px;
+		font-size: 22px;
 		text-align: center;
 		line-height:20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		color:white;
-		height:80px;
+		height:60px;
 		padding: 30px;
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 		margin-block:15px;
@@ -130,9 +133,9 @@ input:focus{
 	p{
 		font-family:'Montserrat';
 		font-weight: 600;
-		font-size: 24px;
+		font-size: 18px;
 		text-align: left;
-		line-height:28px;
+		line-height:22px;
 		color:${pastel};
 		padding-block:10px;
 		width:80%;
@@ -144,7 +147,7 @@ input:focus{
 		font-size: 30px;
 		text-align: center;
 		line-height:33px;
-		color:${pastel};
+		color:${rosa};
 		padding-block:30px;
 		width:70%;
 		@media (max-width: 800px) {width: 100%; font-size:20px; line-height:22px; padding-block:15px;}
@@ -164,7 +167,7 @@ input:focus{
 		font-family:'Montserrat';
 		font-weight: 600;
 		font-size: 24px;
-		text-align: left;
+		text-align: center;
 		line-height:28px;
 		color:${pastel};
 		padding-block:10px;
@@ -198,9 +201,9 @@ input:focus{
 	p{
 		font-family:'Montserrat';
 		font-weight: 600;
-		font-size: 22px;
+		font-size: 18px;
 		text-align: left;
-		line-height:24px;
+		line-height:22px;
 		color:${pastel};
 		padding-block:10px;
 		width:100%;
@@ -211,17 +214,18 @@ input:focus{
 		font-weight: 700;
 		font-size: 30px;
 		text-align: center;
+		margin-inline: auto;
 		line-height:33px;
 		color:${pastel};
 		padding-block:30px;
-		width:70%;
+		width:100%;
 		@media (max-width: 800px) {width: 100%; font-size:20px; line-height:22px; padding-block:15px;}
 	}
 }	
 
 .buttonsbox{
 display: flex;
-justify-content: space-around;
+justify-content: center;
 flex-wrap: wrap;
 width: 100%;
 padding-bottom: 20px;
@@ -242,6 +246,7 @@ padding-bottom: 20px;
 		margin-block:15px;
 		padding:10px;
 		background-color: ${azul};
+		margin-inline:15px;
 		@media (max-width: 800px) {
 			width:100%; font-size:14px; line-height:18px;
 			margin-block: 10px;
@@ -260,9 +265,9 @@ padding-bottom: 20px;
 	p{
 		font-family:'Montserrat';
 		font-weight: 600;
-		font-size: 24px;
+		font-size: 20px;
 		text-align: justify;
-		line-height:30px;
+		line-height:24px;
 		color:black;
 		padding-block:10px;
 		width:80%;
@@ -271,9 +276,9 @@ padding-bottom: 20px;
 	h1{
 		font-family:'Montserrat';
 		font-weight: bold;
-		font-size: 30px;
+		font-size: 36px;
 		text-align: center;
-		line-height:35px;
+		line-height:38px;
 		color:${roxo};
 		padding-block:10px;
 		width:70%;
@@ -284,11 +289,14 @@ padding-bottom: 20px;
 		border-radius:50px;
 		font-family:'Montserrat';
 		font-weight: 700;
-		font-size: 25px;
+		font-size: 20px;
 		text-align: center;
 		line-height:20px;
 		color:white;
-		height:80px;
+		height:60px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		padding: 30px;
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 		margin-block:15px;
@@ -410,6 +418,7 @@ h1{
 		line-height:40px;
 		color:white;
 		padding-block:20px;
+		padding-inline: 3%;
 		margin-bottom:30px;
 
 @media (max-width: 800px) {font-size:22px; line-height:25px;margin-bottom:0;}
@@ -434,9 +443,9 @@ margin-top: 60px;
 	h1{
 		font-family:'Montserrat';
 		font-weight: 700;
-		font-size: 40px;
+		font-size: 44px;
 		text-align: center;
-		line-height:40px;
+		line-height:44px;
 		color:black;
 		padding-block: 20px;
 
@@ -485,7 +494,7 @@ p{
 	width:48%;
 	background-color: ${rosa};
 	box-shadow:(0 0 10px rgba(0, 0, 0, 0.3));
-padding-top:40px;
+padding-top:60px;
 padding-bottom:10px;
 display: flex;
 flex-direction: column;
@@ -699,16 +708,17 @@ button{
 	background: linear-gradient(to bottom, ${rosa}, ${lilas});
 	justify-content:space-between;
 	align-items:center;
-	padding-inline:10%;
+	padding-inline:5%;
 	padding-top:30px;
 	flex-wrap:wrap;
 	
 	h1{font-family:'Montserrat';
 		font-weight: 700;
-		font-size: 35px;
+		font-size: 32px;
 		text-align: center;
-		line-height:40px;
+		line-height:38px;
 		color:black;
+		margin-inline: auto;
 		@media (max-width: 800px) {font-size:20px; line-height:22px;padding-block:0;}
 	}
 	p{
@@ -768,11 +778,12 @@ button{
 	width:100%;
 	display:flex;
 	flex-direction: column;
-	background: black;
+	background: linear-gradient(to bottom , ${roxo}, ${pastel});
 	justify-content:space-between;
 	align-items:center;
 	padding-bottom: 35px;
 	padding-inline:10%;
+	@media (max-width: 800px) {padding-bottom:0;}
 	p{
 		font-family:'Montserrat';
 		font-weight: 700;
@@ -794,7 +805,7 @@ button{
 	}
 }
 .mobgamb{
-
+	padding-top: 15px;
 	@media (max-width: 800px) {
 		flex-wrap: wrap;
 	}
@@ -819,6 +830,7 @@ button{
 		@media (max-width: 800px) {font-size:25px; line-height:28px;}
 	}
 	padding-bottom:40px;
+	@media (max-width: 800px) {padding-bottom:10px;}
 }
 .bonusCont{
 padding-block:10px;
@@ -836,7 +848,7 @@ padding-block:10px;
 	}
 }
 .checktwo{
-		width:50%;
+		width:70%;
 		height: 100%;
 		border-radius:30px;
 		padding-block:25px;
@@ -845,19 +857,16 @@ padding-block:10px;
 		justify-content: center;
 		p{font-family:'Montserrat';
 		font-weight: 500;
-		font-size: 20px;
+		font-size: 18px;
 		text-align: center;
-		line-height:22px;
+		line-height:20px;
 		color:white;
-		padding-block:10px;
+		padding-block:15px;
 		text-align:left;
 		@media (max-width: 800px) {font-size:17px; line-height:18px; padding-block:10px;}
 	}
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 		padding-inline:35px;
-		background-color: #740094;
 		cursor:default;
-		border: 1px solid ${lilas};
 		@media (max-width: 800px) {width:90%; padding-block:10px;}
 }
 .textboxb{
@@ -866,6 +875,15 @@ padding-block:10px;
 	justify-content: space-around;
 	flex-wrap: wrap;
 	margin-block:20px;
+	@media (max-width: 800px) {width:100%;margin-block:0%;}
+	
+}
+.textboxc{
+	width:100%;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	margin-block:20px;
 	@media (max-width: 800px) {width:100%;margin-bottom:0%;}
 	
 }
@@ -873,36 +891,39 @@ padding-block:10px;
 .questionBox{
 	display: flex;
 	flex-direction: column;
-	width: 20%;
-	margin-inline:10px;
+	width: 15%;
+	margin-inline:5%;
 	padding-bottom: 15px;
 	
 	@media (max-width: 800px) {width:90%;}
 
 		p{	font-family:'Montserrat';
 		font-weight: 400;
-		font-size: 18px;
+		font-size: 14px;
+		padding-inline:10px;
 		text-align: center;
-		line-height:20px;
+		line-height:18px;
 		color:black;
-		text-align:left;
+		text-align:justify;
 	transition: height 0.5s ease;
 
 		@media (max-width: 800px) {font-size:15px; line-height:17px;}
 	}
 }
 .imageContainer2{
-	width: 25%;
+	width: 15%;
 	position: relative;
-	margin-inline: auto;
+	margin-inline: 4%;
 	overflow: hidden;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-	border-radius: 15px;
+	border-radius: 18px;
 	@media (max-width: 800px) {
 		width: 40%;
+		margin-bottom: 15px;
 	}
 	img{
 		width:100%;
+		margin-top:0;
 		object-fit: cover;
 	}
 }
@@ -921,8 +942,13 @@ padding-block:10px;
 .imgdiv2{
 	width: 30%;
 }
-
-.imgdiv{
+.foto3cont{
+	width: 100%;
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+}
+.foto3gradient{
 	width: 100%;
 	position: absolute;
 	top:0;
@@ -931,6 +957,21 @@ padding-block:10px;
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
+	z-index:10;
+	cursor: default;
+	background: linear-gradient(to top, black 0%, rgba(255, 0, 0, 0) 3%);
+	@media (max-width: 800px) {background: linear-gradient(to top, black 0%, black 2%, rgba(255, 0, 0, 0) 8%);}
+}
+
+.imgdiv{
+	width: 100%;
+	position: absolute;
+	top:0;
+	left:0;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
 	z-index:2;
 	cursor: default;
 	background: linear-gradient(to top, ${roxo} 0%, ${roxo} 15%, rgba(255, 0, 0, 0) 35%);
@@ -938,11 +979,12 @@ padding-block:10px;
 z-index: 3;
 font-family:'Montserrat';
 		font-weight: 700;
-		font-size: 22px;
+		font-size: 18px;
 		text-align: center;
-		line-height:22px;
+		line-height:20px;
 		color:${pastel};
-		padding-bottom: 20px;
+		padding-bottom: 15px;
+		@media (max-width: 800px) {font-size:22px; line-height:24px;}
 	}
 }
 .imgdiv4{
@@ -960,19 +1002,33 @@ font-family:'Montserrat';
 	h1{
 z-index: 3;
 font-family:'Montserrat';
-		font-weight: 700;
-		font-size: 22px;
+		font-weight: 600;
+		font-size: 18px;
 		text-align: center;
 		line-height:22px;
 		color:${pastel};
-		padding-bottom: 20px;
+		padding-bottom: 10px;
 		@media (max-width: 800px) {font-size:13px; padding-bottom:10px; line-height: 16px;}
 	}
 }
+.footer {
+            background-color: black;
+            padding-block: 30px;
+            width: 100%;
+        }
+
+        .texth6 {
+            text-align: center;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 18px;
+        }
 .questionBox2{
 	display: flex;
 	flex-direction: column;
-	width: 43%;
+	width: 70%;
 	margin-inline:10px;
 	@media (max-width: 800px) {width:90%;}
 
@@ -993,12 +1049,13 @@ font-family:'Montserrat';
 .question{
 	display:flex;
 	justify-content:space-between;
+	align-items: center;
 	width:100%;
 	cursor:pointer;
 	width: 100%;
 	background-color:${roxo};
 	border-radius:12px;
-	padding:15px;
+	padding:10px;
 	overflow:hidden;
 	margin-block:10px;
 
@@ -1007,9 +1064,9 @@ font-family:'Montserrat';
 	h1{
 		font-family:'Montserrat';
 		font-weight: 600;
-		font-size: 23px;
+		font-size: 16px;
 		text-align: left;
-		line-height:25px;
+		line-height:20px;
 		color:white;
 		@media (max-width: 800px) {font-size:18px; line-height:20px;}
 	}
@@ -1056,8 +1113,7 @@ font-family:'Montserrat';
 	
 }
 .foto3{
-	width: 38%;
-	margin-block: 30px;
+	width: 100%;
 	filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5));
 	object-fit: cover;
 	border-radius:30px;

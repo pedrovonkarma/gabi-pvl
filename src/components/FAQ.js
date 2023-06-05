@@ -20,7 +20,7 @@ export default function FAQ(){
     
     return(<div className="FAQ">
         <h1>Perguntas frequentes:</h1>
-        <div className="textboxb">
+        <div className="textboxc">
         <div className="questionBox2">
             <div onClick={() => {r1===''? setR1(<p>{resposta1}</p>) : setR1('')}} className="question2">
                 <h1>Preciso ter máquina de corte para fazer o curso?</h1>  

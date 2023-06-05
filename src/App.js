@@ -10,6 +10,7 @@ import OfertaContainer from "./components/OfertaContainer";
 import ContainerTextoTres from "./components/ContainerTextoTres";
 import FAQ from "./components/FAQ";
 import ContainerB from "./components/ContainerB";
+import Footer from "./components/Footer";
 function App() {
   return (
     <>
@@ -26,6 +27,7 @@ function App() {
     <OfertaContainer/>
     <ContainerTextoTres/>
     <FAQ/>
+    <Footer/>
     </>
   );
 }
