@@ -7,7 +7,7 @@ export default function ContainerB(){
 
     return(<div className="modCont">
         <p>SÃO 3 MOLDES EXCLUSIVOS<br/>QUE VOCÊ SÓ ENCONTRA AQUI</p>
-        <div style={{display: 'flex', width: '100%', justifyContent: 'space-around'}}>
+        <div className="mobgamb" style={{display: 'flex', width: '100%', justifyContent: 'space-around'}}>
         <ImageTemplate classN="imageContainer2" img={foto3} name="Caixa cubetes"/>
         <ImageTemplate classN="imageContainer2" img={foto4} name="Caixa cilindriquinha"/>
         <ImageTemplate classN="imageContainer2" img={foto5} name="Caixa curva"/>

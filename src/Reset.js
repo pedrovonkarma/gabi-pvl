@@ -66,6 +66,7 @@ input:focus{
 	justify-content:space-between;
 	align-items:center;
 	padding-block:15px;
+	@media (max-width: 800px) {width: 100%;}
 	img{
 		width:15%;
 		filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
@@ -149,6 +150,40 @@ input:focus{
 		@media (max-width: 800px) {width: 100%; font-size:20px; line-height:22px; padding-block:15px;}
 	}
 }
+.textCont3{
+	width:100%;
+	display:flex;
+	flex-direction:column;
+	background: linear-gradient(to bottom, black, ${roxo});
+	justify-content:space-between;
+	align-items:center;
+	padding-top:15px;
+	padding-inline:5%;
+	padding-bottom:40px;
+	p{
+		font-family:'Montserrat';
+		font-weight: 600;
+		font-size: 24px;
+		text-align: left;
+		line-height:28px;
+		color:${pastel};
+		padding-block:10px;
+		width:80%;
+		@media (max-width: 800px) {width: 100%;font-size:16px; line-height:18px;}
+	}
+	h1{
+		font-family:'Montserrat';
+		font-weight: 700;
+		font-size: 30px;
+		text-align: center;
+		line-height:33px;
+		color:${pastel};
+		padding-block:30px;
+		width:70%;
+		@media (max-width: 800px) {width: 100%; font-size:20px; line-height:22px; padding-block:15px;}
+	}
+	@media (max-width: 800px) {padding-bottom:15px;}
+}
 	
 .textContdois{
 	width:100%;
@@ -159,7 +194,7 @@ input:focus{
 	align-items:center;
 	padding-block:15px;
 	padding-inline:5%;
-
+	@media (max-width: 800px) {padding-bottom:0;}
 	p{
 		font-family:'Montserrat';
 		font-weight: 600;
@@ -169,7 +204,7 @@ input:focus{
 		color:${pastel};
 		padding-block:10px;
 		width:100%;
-		@media (max-width: 800px) {width: 100%;font-size:16px; line-height:18px;}
+		@media (max-width: 800px) {width: 100%;font-size:14px; line-height:16px;}
 	}
 	h1{
 		font-family:'Montserrat';
@@ -231,7 +266,7 @@ padding-bottom: 20px;
 		color:black;
 		padding-block:10px;
 		width:80%;
-		@media (max-width: 800px) {font-size:16px; line-height:20px;}
+		@media (max-width: 800px) {font-size:16px; line-height:18px; font-weight:500;}
 	}
 	h1{
 		font-family:'Montserrat';
@@ -263,14 +298,14 @@ padding-bottom: 20px;
 			width:100%; font-size:17px; line-height:18px;
 			padding: 0;
 			height: 70px;
+			margin-top: 25px;
+			margin-bottom: 0;
 		}
 	}
 
 }
-.video-responsive{
-	width:100%;
-	display:flex;
-	justify-content:center;
+.mobhide{
+	@media (max-width: 800px) {display: none;}
 }
 .fourthCont{
 	width:100%;
@@ -366,7 +401,7 @@ align-items:center;
 padding-block:30px;
 padding-inline:4%;
 background: black;
-
+@media (max-width: 800px) {padding-bottom:0;}
 h1{
 	font-family:'Montserrat';
 		font-weight: 700;
@@ -387,7 +422,7 @@ align-items:center;
 width: 70%;
 padding-block: 20px;
 margin-top: 60px;
-@media (max-width: 800px) {flex-direction:column; width: 100%;}
+@media (max-width: 800px) {flex-direction:column; width: 100%;margin-top:0;}
 }
 
 .FAQ{
@@ -405,7 +440,7 @@ margin-top: 60px;
 		color:black;
 		padding-block: 20px;
 
-@media (max-width: 800px) {font-size:28px; line-height:30px;}
+@media (max-width: 800px) {font-size:28px; line-height:30px; padding-block:0;}
 }
 	}
 
@@ -459,6 +494,7 @@ border-radius:40px;
 border: 1px solid ${roxo};
 @media (max-width: 800px) {
 	width: 100%;
+	padding-block:30px;
   }
 h2{
 	font-family:'Montserrat';
@@ -673,7 +709,7 @@ button{
 		text-align: center;
 		line-height:40px;
 		color:black;
-		@media (max-width: 800px) {font-size:21px; line-height:24px;padding-block:0;}
+		@media (max-width: 800px) {font-size:20px; line-height:22px;padding-block:0;}
 	}
 	p{
 		font-family:'Montserrat';
@@ -685,7 +721,7 @@ button{
 		padding-block:40px;
 		width:70%;
 		margin:auto;
-		@media (max-width: 800px) {font-size:20px; line-height:22px; width:90%; padding-block:25px;}
+		@media (max-width: 800px) {font-size:18px; line-height:20px; width:90%; padding-block:25px;}
 	}
 	button{
 		margin-inline:auto;
@@ -704,8 +740,8 @@ button{
 		cursor:default;
 	}
 }
-.mobhide{
-	@media (max-width: 800px) {display:none;}
+.mobcolum{
+	@media (max-width: 800px) {flex-direction: column;}
 }
 .checkbox{
 	margin-inline:auto;
@@ -746,7 +782,7 @@ button{
 		color:${pastel};
 		padding-block:20px;
 		@media (max-width: 800px) {
-			font-size:22px; line-height:25px;
+			font-size:20px; line-height:22px;
 		}
 	}
 	img{
@@ -755,6 +791,12 @@ button{
 		box-shadow: 0 0 10px rgba(0, 0, 0, 1);
 		margin-block:20px;
 		@media (max-width: 800px) {width:45%;}
+	}
+}
+.mobgamb{
+
+	@media (max-width: 800px) {
+		flex-wrap: wrap;
 	}
 }
 .fifCont{
@@ -824,9 +866,10 @@ padding-block:10px;
 	justify-content: space-around;
 	flex-wrap: wrap;
 	margin-block:20px;
-	@media (max-width: 800px) {width:100%;}
+	@media (max-width: 800px) {width:100%;margin-bottom:0%;}
 	
 }
+
 .questionBox{
 	display: flex;
 	flex-direction: column;
@@ -855,6 +898,9 @@ padding-block:10px;
 	overflow: hidden;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 	border-radius: 15px;
+	@media (max-width: 800px) {
+		width: 40%;
+	}
 	img{
 		width:100%;
 		object-fit: cover;
@@ -875,6 +921,7 @@ padding-block:10px;
 .imgdiv2{
 	width: 30%;
 }
+
 .imgdiv{
 	width: 100%;
 	position: absolute;
@@ -896,6 +943,30 @@ font-family:'Montserrat';
 		line-height:22px;
 		color:${pastel};
 		padding-bottom: 20px;
+	}
+}
+.imgdiv4{
+	width: 100%;
+	position: absolute;
+	top:0;
+	left:0;
+	height: 100%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	z-index:2;
+	cursor: default;
+	background: linear-gradient(to top, ${roxo} 0%, ${roxo} 15%, rgba(255, 0, 0, 0) 35%);
+	h1{
+z-index: 3;
+font-family:'Montserrat';
+		font-weight: 700;
+		font-size: 22px;
+		text-align: center;
+		line-height:22px;
+		color:${pastel};
+		padding-bottom: 20px;
+		@media (max-width: 800px) {font-size:13px; padding-bottom:10px; line-height: 16px;}
 	}
 }
 .questionBox2{
@@ -958,6 +1029,13 @@ font-family:'Montserrat';
 	width: 100%;
 	padding-inline:5%;
 	background: linear-gradient(to bottom, ${roxo}, ${rosa});
+	@media (max-width: 800px) {flex-direction: column;}
+}
+.mobMod{
+	p{
+		@media (max-width: 800px) {width: 100%;}
+	}
+	@media (max-width: 800px) {width: 100%; padding-bottom: 15px;}
 }
 .secondCont{
 	display: flex;
@@ -965,6 +1043,7 @@ font-family:'Montserrat';
 	width: 100%;
 	align-items: center;
 	padding-inline:2%;
+	@media (max-width: 800px) {flex-direction: column;}
 }
 .foto2{
 	width: 28%;
@@ -972,7 +1051,8 @@ font-family:'Montserrat';
 	object-fit: cover;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 	border-radius:30px;
-	@media (max-width: 800px) {display:none;}
+	@media (max-width: 800px) {width: 80%; margin-block:0;
+	margin-inline: auto;}
 	
 }
 .foto3{
@@ -981,7 +1061,7 @@ font-family:'Montserrat';
 	filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5));
 	object-fit: cover;
 	border-radius:30px;
-	@media (max-width: 800px) {display:none;}
+	@media (max-width: 800px) {width: 80%; margin-inline: auto; margin-bottom:0;}
 	
 }
 .question2{
@@ -997,6 +1077,7 @@ font-family:'Montserrat';
 	margin-block:10px;
 	align-items: center;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	@media (max-width: 800px) {padding-block:10px;}
 
 	h1{
 		font-family:'Montserrat';
@@ -1060,6 +1141,9 @@ font-family:'Montserrat';
 	width:45%;
 	border-radius:50px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.mobtextgamb{
+	@media (max-width: 800px) {font-size: 16px;}
 }
 `
 

@@ -10,6 +10,6 @@ export default function ContainerE(){
             <p>• Quer aumentar a renda;</p>
             <p>• Quer fazer peças mais criativas;</p>
             <p>• Quer se tornar destaque na região que mora;</p></div>
-            <img src={foto18} alt="foto" className="foto2"/></div>
+            <img src={foto18} alt="foto" className="foto2 mobhide"/></div>
     </div>)
 }
