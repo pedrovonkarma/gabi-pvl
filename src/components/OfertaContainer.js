@@ -18,7 +18,7 @@ export default function OfertaContainer() {
                 - 10 aulas extras de nivelamento e dúvidas gerais<br />
                 - Desenvolvimento de 3 moldes de caixas e + 2 bônus
             </p></div>
-            <div className="oferta2"><img className="phonecollage mobhide" src={phones} alt="phones" /><h2>R$ 197,00 à vista.<br />Dividido em 12x R$ 19,78</h2><button>ENTRAR AGORA</button></div>
+            <div className="oferta2"><img className="phonecollage mobhide" src={phones} alt="phones" /><h2>R$ 197,00 à vista.<br />Dividido em 12x R$ 19,78</h2><button onClick={() => window.open("https://pay.kiwify.com.br/ZznJHKj")}>ENTRAR AGORA</button></div>
         </div>
     </div>)
 }

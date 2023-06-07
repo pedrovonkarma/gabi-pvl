@@ -117,6 +117,7 @@ input:focus{
 			padding: 0;
 			padding-inline:5px;
 			height: 70px;
+			background-color: ${rosa}
 		}
 	}
 }
@@ -207,7 +208,7 @@ input:focus{
 		color:${pastel};
 		padding-block:10px;
 		width:100%;
-		@media (max-width: 800px) {width: 100%;font-size:14px; line-height:16px; text-align:center;}
+		@media (max-width: 800px) {width: 100%;font-size:12px; line-height:14px; text-align:center;}
 	}
 	h1{
 		font-family:'Montserrat';
@@ -477,8 +478,9 @@ p{
 		line-height:22px;
 		color:white;
 		@media (max-width: 800px) {
-	font-size:9px;
-	line-height: 18px;
+	font-size:11px;
+	line-height: 20px;
+	text-align: justify;
   }
 }
 }
@@ -815,7 +817,7 @@ button{
 }
 .fifCont{
 	width:100%;
-	background: linear-gradient(to bottom , ${lilas}, ${rosa});
+	background: ${roxo};
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -823,17 +825,28 @@ button{
 	padding-top: 15px;
 	h1{
 		font-family:'Montserrat';
-		font-weight: 700;
+		font-weight: 800;
 		font-size: 45px;
 		text-align: center;
 		line-height:50px;
-		color:black;
+		color:white;
 		padding-block:20px;
 		margin-bottom:20px;
-		@media (max-width: 800px) {font-size:25px; line-height:28px;}
+		@media (max-width: 800px) {font-size:25px; line-height:28px; margin-bottom: 0; padding-bottom:15px;}
 	}
 	padding-bottom:40px;
 	@media (max-width: 800px) {padding-bottom:10px; padding-inline:0;}
+}
+.headline{
+	font-family:'Montserrat';
+		font-weight: 700;
+		font-size: 40px;
+		text-align: center;
+		line-height:52px;
+		color:black;
+		padding-block:20px;
+		margin-bottom:20px;
+		@media (max-width: 800px) {font-size:24px; line-height:26px; margin-bottom: 0;}
 }
 .bonusCont{
 padding-block:10px;
@@ -1090,7 +1103,7 @@ font-family:'Montserrat';
 	width: 100%;
 	padding-inline:5%;
 	background: linear-gradient(to bottom, ${roxo}, ${rosa});
-	@media (max-width: 800px) {flex-direction: column;}
+	@media (max-width: 800px) {flex-direction: column; background: ${roxo}}
 }
 .mobMod{
 	p{
@@ -1204,6 +1217,12 @@ font-family:'Montserrat';
 }
 .mobtextgamb{
 	@media (max-width: 800px) {font-size: 16px;}
+}
+.mobshow{
+	display: none;
+	@media (max-width: 800px) {display: block;
+	box-shadow: none;
+	}
 }
 `
 

@@ -30,6 +30,7 @@ export default function ContainerD() {
 
 
     return (<div className="fourthCont">
+        <h1 className='headline'>DÁ SÓ UMA OLHADA EM TUDO O QUE VAI ENCONTRAR NO FORA DA CAIXA 2</h1>
         <div className="textboxb">
             <div className="questionBox">
                 <ImageTemplate classN="imageContainer" name='Estratégias' img={foto6}/>
@@ -102,6 +103,6 @@ export default function ContainerD() {
 
 
         </div>
-        <button>QUERO COMPRAR AGORA</button>
+        <button onClick={() => window.open("https://pay.kiwify.com.br/ZznJHKj")}>QUERO COMPRAR AGORA</button>
     </div>)
 }
